@@ -189,16 +189,30 @@
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
+    gap: 24px;
+  }
+
+  .services-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    gap: 24px;
+    margin-top: 22px;
   }
 
   .service {
     background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
     padding: 28px 24px;
+  }
+
+  @media (max-width: 700px) {
+    .services-columns {
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+    }
   }
 
   .service .num {
@@ -477,7 +491,7 @@
   <div class="container">
     <div class="section-label">What We Do</div>
     <h2>Services</h2>
-    <div class="services-grid">
+    <div class="services-columns">
       <div class="service">
         <span class="num">01</span>
         <h3>Web Design &amp; Reform</h3>
@@ -490,16 +504,21 @@
       </div>
       <div class="service">
         <span class="num">03</span>
-        <h3>Development</h3>
-        <p>Custom-built, fast, and reliable — from landing pages to full sites.</p>
+        <h3>SEO &amp; Development</h3>
+        <p>Custom-built, fast, and reliable — with SEO built in from the start, not bolted on after.</p>
       </div>
       <div class="service">
         <span class="num">04</span>
+        <h3>E-Commerce</h3>
+        <p>Online stores that make it simple for customers to browse, buy, and come back.</p>
+      </div>
+      <div class="service">
+        <span class="num">05</span>
         <h3>Brand Identity</h3>
         <p>Logos, color systems, and visual language that make you memorable.</p>
       </div>
       <div class="service">
-        <span class="num">05</span>
+        <span class="num">06</span>
         <h3>Online Growth</h3>
         <p>Strategy to grow your presence and reach the right audience.</p>
       </div>
