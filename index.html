@@ -387,23 +387,14 @@
 
   .quick-contact p { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 12px; }
 
-  .phone-link {
-    font-family: var(--mono);
-    font-size: 1.3rem;
-    color: var(--accent);
-    font-weight: 700;
-    letter-spacing: 0.02em;
-  }
-  .phone-link:hover { color: var(--accent-dim); }
-
   .quick-contact .email-link {
     display: block;
-    margin-top: 10px;
-    color: var(--text-dim);
+    color: var(--accent);
     font-family: var(--mono);
-    font-size: 0.9rem;
+    font-size: 1.15rem;
+    font-weight: 700;
   }
-  .quick-contact .email-link:hover { color: var(--accent); }
+  .quick-contact .email-link:hover { color: var(--accent-dim); }
 
   footer {
     padding: 64px 0 40px;
@@ -610,11 +601,10 @@
       </form>
 
       <p class="form-success" id="form-success" hidden>Thanks — your message is in. We'll get back to you shortly.</p>
-      <p class="form-error" id="form-error" hidden>Something went wrong sending that. Reach out directly instead — <a href="tel:+17329256446">(732) 925-6446</a> or <a href="mailto:business@aventraevo.com">business@aventraevo.com</a>.</p>
+      <p class="form-error" id="form-error" hidden>Something went wrong sending that. Reach out directly instead — <a href="mailto:business@aventraevo.com">business@aventraevo.com</a>.</p>
 
       <div class="quick-contact">
         <p>Prefer to reach out directly?</p>
-        <a href="tel:+17329256446" class="phone-link">(732) 925-6446</a>
         <a href="mailto:business@aventraevo.com" class="email-link">business@aventraevo.com</a>
       </div>
     </div>
