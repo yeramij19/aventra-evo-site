@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aventra Evo — Web & Brand Studio</title>
+<title>SMS Privacy Policy — Aventra Evo</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23000000'/%3E%3Ccircle cx='100' cy='100' r='88' fill='none' stroke='%234c8dff' stroke-width='11'/%3E%3Cg transform='translate(22.78,47.74) scale(0.78)'%3E%3Cline x1='90' y1='10' x2='28' y2='138' stroke='%234c8dff' stroke-width='15' stroke-linecap='square'/%3E%3Cline x1='120' y1='50' x2='90' y2='10' stroke='%234c8dff' stroke-width='15' stroke-linecap='square'/%3E%3Cpolygon points='108,44 126,32 176,32 176,56 126,56' fill='%234c8dff'/%3E%3Cpolygon points='108,76 126,66 160,66 160,86 126,86' fill='%234c8dff'/%3E%3Cpolygon points='108,108 126,96 176,96 176,120 126,120' fill='%234c8dff'/%3E%3C/g%3E%3C/svg%3E">
 <style>
   @font-face {
@@ -24,34 +24,22 @@
     --text-dim: #9198a3;
     --accent: #4c8dff;
     --accent-dim: #4c8dff;
-    --mono: "Exo2", sans-serif;
+    --mono: "SF Mono", "JetBrains Mono", Consolas, monospace;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
   body {
     background: var(--bg);
     color: var(--text);
     font-family: "Exo2", sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
   }
-
   a { color: inherit; text-decoration: none; }
+  h1, h2, h3 { font-family: "Michroma", sans-serif; font-weight: 400; }
 
-  h1, h2, h3 {
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-  }
+  .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  /* Nav */
   header {
     position: sticky;
     top: 0;
@@ -60,34 +48,12 @@
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
   }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 0;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: "Michroma", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-  }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: "Michroma", sans-serif; font-size: 0.95rem; font-weight: 400; letter-spacing: 0.02em; }
   .logo span span { color: var(--accent); }
   .logomark { flex-shrink: 0; }
-
-  .nav-links {
-    display: flex;
-    gap: 28px;
-    font-size: 0.9rem;
-    color: var(--text-dim);
-  }
+  .nav-links { display: flex; gap: 28px; font-size: 0.9rem; color: var(--text-dim); }
   .nav-links a:hover { color: var(--accent); }
-
   .nav-cta {
     border: 1px solid var(--accent-dim);
     color: var(--accent);
@@ -98,298 +64,46 @@
     transition: background 0.2s, color 0.2s;
   }
   .nav-cta:hover { background: var(--accent); color: #06120f; }
+  @media (max-width: 600px) { .nav-links { display: none; } }
 
-  /* Hero */
-  .hero {
-    position: relative;
-    overflow: hidden;
-    padding: 100px 0 80px;
+  .policy-hero {
+    padding: 72px 0 40px;
     border-bottom: 1px solid var(--border);
   }
-
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-  }
-  .hero-bg video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.9;
-  }
-  .hero-bg::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.55) 100%);
-  }
-
-  .hero .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  .tag {
-    font-family: var(--mono);
-    color: var(--accent);
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-    display: block;
-  }
-
-  .hero h1 {
-    font-size: clamp(1.9rem, 4.4vw, 2.9rem);
-    line-height: 1.3;
-    letter-spacing: 0;
-    max-width: 800px;
-  }
-  .hero h1 span { color: var(--accent); }
-
-  .hero p {
-    margin-top: 20px;
-    color: var(--text-dim);
-    font-size: 1.05rem;
-    max-width: 560px;
-  }
-
-  .hero-actions {
-    margin-top: 36px;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  .btn {
-    font-family: var(--mono);
-    font-size: 0.9rem;
-    padding: 12px 22px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    transition: all 0.2s;
-  }
-  .btn-primary {
-    background: var(--accent);
-    color: #06120f;
-    border-color: var(--accent);
-    font-weight: 600;
-  }
-  .btn-primary:hover { background: var(--accent-dim); }
-  .btn-secondary { color: var(--text); }
-  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-
-  /* Section shared */
-  section { padding: 72px 0; border-bottom: 1px solid var(--border); }
-  section:last-of-type { border-bottom: none; }
-
-  .section-label {
+  .policy-hero .section-label {
     font-family: var(--mono);
     color: var(--accent);
     font-size: 0.8rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    display: block;
   }
-
-  section h2 {
-    font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+  .policy-hero h1 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
     line-height: 1.3;
-    letter-spacing: 0;
-    margin-bottom: 40px;
+    max-width: 700px;
   }
-
-  /* About */
-  #about h2 {
+  .policy-hero p {
+    margin-top: 18px;
+    color: var(--text-dim);
     max-width: 640px;
-    margin-bottom: 20px;
-  }
-  #about h2 span { color: var(--accent); }
-
-  .about-lede {
-    color: var(--text-dim);
-    font-size: 1.05rem;
-    max-width: 680px;
-    margin-bottom: 40px;
   }
 
-  /* Services */
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-  }
-
-  .services-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
-    gap: 24px;
-    margin-top: 22px;
-  }
-
-  .service {
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 28px 24px;
-  }
-
-  @media (max-width: 700px) {
-    .services-columns {
-      grid-template-columns: 1fr;
-      grid-auto-flow: row;
-    }
-  }
-
-  .service .num {
-    font-family: var(--mono);
-    color: var(--accent-dim);
-    font-size: 0.8rem;
-    margin-bottom: 14px;
-    display: block;
-  }
-
-  .service h3 {
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-  }
-
-  .service p {
-    color: var(--text-dim);
-    font-size: 0.9rem;
-  }
-
-  /* Work in progress */
-  .work-card {
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .status-pill {
-    font-family: var(--mono);
-    font-size: 0.75rem;
-    color: var(--accent);
-    border: 1px solid var(--accent-dim);
-    padding: 4px 10px;
-    border-radius: 999px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 14px;
-  }
-  .status-pill::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    display: inline-block;
-    animation: pulse 1.6s infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
-
-  .work-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
-  .work-card p { color: var(--text-dim); font-size: 0.92rem; max-width: 480px; }
-
-  /* Contact */
-  .contact-box {
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 48px;
-  }
-
-  .contact-box .section-label,
-  .contact-box h2,
-  .contact-box > p {
-    text-align: center;
-  }
-
-  .contact-box h2 { margin-bottom: 14px; }
-  .contact-box > p { color: var(--text-dim); margin-bottom: 36px; max-width: 480px; margin-left: auto; margin-right: auto; }
-
-  .contact-form {
-    max-width: 480px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .form-row { display: flex; flex-direction: column; gap: 6px; }
-
-  .form-row label {
-    font-family: var(--mono);
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-
-  .form-row input,
-  .form-row textarea {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 12px 14px;
-    color: var(--text);
-    font-family: inherit;
-    font-size: 0.95rem;
-    resize: vertical;
-  }
-
-  .form-row input:focus,
-  .form-row textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-
-  .contact-form .btn { width: 100%; text-align: center; cursor: pointer; }
-
-  .hidden-field { display: none; }
-
-  .form-success,
-  .form-error {
-    max-width: 480px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  .form-success { color: var(--accent); border: 1px solid var(--accent-dim); }
-  .form-error { color: var(--text-dim); border: 1px solid var(--border); }
-  .form-error a { color: var(--accent); }
-
-  .quick-contact {
-    margin-top: 36px;
-    padding-top: 28px;
-    border-top: 1px solid var(--border);
-    text-align: center;
-  }
-
-  .quick-contact p { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 12px; }
-
-  .quick-contact .email-link {
-    display: block;
-    color: var(--accent);
-    font-family: var(--mono);
+  .policy-content { padding: 56px 0 80px; }
+  .policy-content .block { max-width: 720px; margin-bottom: 40px; }
+  .policy-content h2 {
     font-size: 1.15rem;
-    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 14px;
   }
-  .quick-contact .email-link:hover { color: var(--accent-dim); }
+  .policy-content p { color: var(--text-dim); margin-bottom: 12px; }
+  .policy-content p:last-child { margin-bottom: 0; }
+  .policy-content ul { color: var(--text-dim); padding-left: 22px; margin: 12px 0; }
+  .policy-content li { margin-bottom: 8px; }
+  .policy-content strong { color: var(--text); }
+  .policy-content a.inline-link { color: var(--accent); }
+  .policy-content a.inline-link:hover { color: var(--accent-dim); text-decoration: underline; }
 
   footer {
     position: relative;
@@ -397,7 +111,6 @@
     padding: 64px 0 40px;
     text-align: center;
   }
-
   .footer-skyline {
     position: absolute;
     left: 0;
@@ -409,18 +122,8 @@
     opacity: 0.18;
     pointer-events: none;
   }
-
-  footer .container {
-    position: relative;
-    z-index: 1;
-  }
-
-  .footer-mark {
-    width: 68px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
+  footer .container { position: relative; z-index: 1; }
+  .footer-mark { width: 68px; height: auto; margin-bottom: 20px; }
   .footer-wordmark {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
@@ -431,13 +134,7 @@
     padding-left: 0.24em;
   }
   .footer-wordmark span { color: var(--accent); }
-
-  .footer-divider {
-    width: 150px;
-    margin: 20px auto 14px;
-    display: block;
-  }
-
+  .footer-divider { width: 150px; margin: 20px auto 14px; display: block; }
   .footer-tagline {
     font-family: "Michroma", sans-serif;
     font-size: 0.7rem;
@@ -446,7 +143,6 @@
     padding-left: 0.42em;
     margin: 0 0 20px;
   }
-
   .footer-links {
     display: flex;
     justify-content: center;
@@ -457,38 +153,12 @@
     margin-bottom: 20px;
   }
   .footer-links a:hover { color: var(--accent); }
-
   .footer-copyright {
     color: var(--text-dim);
     font-size: 0.78rem;
     font-family: var(--mono);
     padding-top: 24px;
     border-top: 1px solid var(--border);
-  }
-
-  @media (max-width: 600px) {
-    .nav-links { display: none; }
-  }
-
-  /* Scroll reveal */
-  .reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .reveal-stagger.is-visible:nth-child(1) { transition-delay: 0s; }
-  .reveal-stagger.is-visible:nth-child(2) { transition-delay: 0.08s; }
-  .reveal-stagger.is-visible:nth-child(3) { transition-delay: 0.16s; }
-  .reveal-stagger.is-visible:nth-child(4) { transition-delay: 0.24s; }
-  .reveal-stagger.is-visible:nth-child(5) { transition-delay: 0.32s; }
-  .reveal-stagger.is-visible:nth-child(6) { transition-delay: 0.4s; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .reveal { opacity: 1; transform: none; transition: none; }
   }
 </style>
 </head>
@@ -511,148 +181,81 @@
         <span>Aventra <span>Evo</span></span>
       </div>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#work">Webfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#work">Webfolio</a>
+        <a href="index.html#contact">Contact</a>
       </div>
-      <a href="#contact" class="nav-cta">Get a Free Quote</a>
+      <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-bg">
-    <video autoplay muted loop playsinline>
-      <source src="assets/hero-bg.mp4" type="video/mp4">
-    </video>
-  </div>
+<section class="policy-hero">
   <div class="container">
-    <span class="tag">Web &amp; Brand Studio</span>
-    <h1>We level up your brand — and help it <span>evolve</span>.</h1>
-    <p>Web design, social media reform, SEO-driven development, e-commerce, and brand identity — built with competitive pricing and full creative freedom.</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Get in Touch</a>
-      <a href="#services" class="btn btn-secondary">See Services</a>
-    </div>
+    <span class="section-label">Legal</span>
+    <h1>SMS Privacy Policy</h1>
+    <p>Effective August 14, 2026. This policy explains how Aventra Evo handles SMS text messaging communications with clients and prospective clients.</p>
   </div>
 </section>
 
-<section id="about">
+<section class="policy-content">
   <div class="container">
-    <div class="section-label">Who We Are</div>
-    <h2 class="reveal">A studio built around one idea: level up, then keep <span>evolving</span></h2>
-    <p class="about-lede reveal">Most small businesses don't need a bigger vendor — they need a partner who treats their brand like it matters. Aventra Evo handles the web, the social presence, and the identity work together, so every piece points the same direction instead of getting stitched together from five different freelancers.</p>
-    <div class="services-grid about-grid">
-      <div class="service reveal reveal-stagger">
-        <span class="num">01</span>
-        <h3>Engage</h3>
-        <p>We start by making sure your brand actually connects — a site and presence that speaks directly to the customers you want walking through the door.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">02</span>
-        <h3>Enhance</h3>
-        <p>From there we sharpen what's already working — better design, clearer messaging, sharper positioning — so nothing about your brand undersells you.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">03</span>
-        <h3>Evolve</h3>
-        <p>Brands aren't static. As your business grows, your site and identity grow with it — not a one-and-done project.</p>
-      </div>
+    <div class="block">
+      <h2>Overview</h2>
+      <p>Aventra Evo ("we," "us," or "our") may use SMS text messaging to communicate with clients and prospective clients who have provided a mobile phone number and given consent to be contacted this way. This policy explains what to expect, how to opt in or out, and how your information is handled.</p>
     </div>
-  </div>
-</section>
 
-<section id="services">
-  <div class="container">
-    <div class="section-label">What We Do</div>
-    <h2 class="reveal">Services</h2>
-    <div class="services-columns">
-      <div class="service reveal reveal-stagger">
-        <span class="num">01</span>
-        <h3>Web Design &amp; Reform</h3>
-        <p>New builds or full reworks of existing sites — clean, modern, and functional.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">02</span>
-        <h3>Social Media Design &amp; Reform</h3>
-        <p>Cohesive visual identity and content design across your social platforms.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">03</span>
-        <h3>SEO &amp; Development</h3>
-        <p>Custom-built, fast, and reliable — with SEO built in from the start, not bolted on after.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">04</span>
-        <h3>E-Commerce</h3>
-        <p>Online stores that make it simple for customers to browse, buy, and come back.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">05</span>
-        <h3>Brand Identity</h3>
-        <p>Logos, color systems, and visual language that make you memorable.</p>
-      </div>
-      <div class="service reveal reveal-stagger">
-        <span class="num">06</span>
-        <h3>Online Growth</h3>
-        <p>Strategy to grow your presence and reach the right audience.</p>
-      </div>
+    <div class="block">
+      <h2>Types of SMS Communications</h2>
+      <p>If you opt in, Aventra Evo may send SMS messages related to:</p>
+      <ul>
+        <li>Project updates and status notifications</li>
+        <li>Quote requests and appointment scheduling</li>
+        <li>Responses to inquiries you've submitted</li>
+      </ul>
+      <p>We do not use SMS for unsolicited marketing to numbers that haven't opted in.</p>
     </div>
-  </div>
-</section>
 
-<section id="work">
-  <div class="container">
-    <div class="section-label">Current Work</div>
-    <h2 class="reveal">Webfolio</h2>
-    <div class="work-card reveal">
-      <div>
-        <span class="status-pill">Actively Building</span>
-        <h3>Barber Shop — Brand &amp; Web Refresh</h3>
-        <p>Full web and social media reform currently underway. Case study coming soon.</p>
-      </div>
+    <div class="block">
+      <h2>Consent (Opt-In)</h2>
+      <p>By submitting your phone number through our contact form, a signed agreement, or another opt-in method and checking a consent box or otherwise agreeing to receive texts, you consent to receive SMS messages from Aventra Evo at the number provided. Consent is not a condition of purchasing any service.</p>
     </div>
-  </div>
-</section>
 
-<section id="contact">
-  <div class="container">
-    <div class="contact-box reveal">
-      <div class="section-label">Let's Talk</div>
-      <h2>Ready to level up?</h2>
-      <p>Tell us a bit about your business — competitive pricing, fast turnaround, full creative freedom.</p>
+    <div class="block">
+      <h2>Message Frequency</h2>
+      <p>Message frequency varies depending on your active projects and inquiries with us. You may receive anywhere from a few messages during an active project to none in a given month.</p>
+    </div>
 
-      <form class="contact-form" id="contact-form">
-        <input type="hidden" name="access_key" value="5068d7d4-c1dd-413e-a2c3-7c654f0f2b4b">
-        <input type="hidden" name="subject" value="New contact form submission — Aventra Evo">
-        <input type="checkbox" name="botcheck" class="hidden-field" style="display:none;">
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-row">
-          <label for="business">Business Name</label>
-          <input type="text" id="business" name="business" required>
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Let's Evolve</button>
-      </form>
+    <div class="block">
+      <h2>Message and Data Rates</h2>
+      <p>Message and data rates may apply, depending on your mobile carrier and plan. Aventra Evo is not responsible for charges billed by your wireless carrier.</p>
+    </div>
 
-      <p class="form-success" id="form-success" hidden>Thanks — your message is in. We'll get back to you shortly.</p>
-      <p class="form-error" id="form-error" hidden>Something went wrong sending that. Reach out directly instead — <a href="mailto:business@aventraevo.com">business@aventraevo.com</a>.</p>
+    <div class="block">
+      <h2>Opt-Out</h2>
+      <p>You can opt out of SMS communications at any time by replying <strong>STOP</strong> to any message. After opting out, you will receive one final confirmation message, and no further SMS messages will be sent unless you opt back in.</p>
+    </div>
 
-      <div class="quick-contact">
-        <p>Prefer to reach out directly?</p>
-        <a href="mailto:business@aventraevo.com" class="email-link">business@aventraevo.com</a>
-      </div>
+    <div class="block">
+      <h2>Help</h2>
+      <p>Reply <strong>HELP</strong> to any message for assistance, or reach out directly at <a class="inline-link" href="mailto:business@aventraevo.com">business@aventraevo.com</a>.</p>
+    </div>
+
+    <div class="block">
+      <h2>Privacy of Your Information</h2>
+      <p>We do not share your mobile phone number or SMS opt-in status with third parties or affiliates for their marketing or promotional purposes. Your information is used solely to communicate with you about your project or inquiry with Aventra Evo.</p>
+      <p>Carriers are not liable for delayed or undelivered messages.</p>
+    </div>
+
+    <div class="block">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+    </div>
+
+    <div class="block">
+      <h2>Contact Us</h2>
+      <p>Questions about this policy or your SMS communications with us can be sent to <a class="inline-link" href="mailto:business@aventraevo.com">business@aventraevo.com</a>.</p>
     </div>
   </div>
 </section>
@@ -705,53 +308,12 @@
     </svg>
     <p class="footer-tagline">WEB &amp; BRAND STUDIO</p>
     <div class="footer-links">
+      <a href="index.html">Home</a>
       <a href="sms-privacy-policy.html">SMS Privacy Policy</a>
     </div>
     <p class="footer-copyright">&copy; 2026 Aventra Evo. All rights reserved.</p>
   </div>
 </footer>
-
-<script>
-  var revealObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(function (el) {
-    revealObserver.observe(el);
-  });
-
-  var form = document.getElementById('contact-form');
-  var successEl = document.getElementById('form-success');
-  var errorEl = document.getElementById('form-error');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var data = new FormData(form);
-    var payload = Object.fromEntries(data.entries());
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(payload)
-    })
-      .then(function (res) { return res.json(); })
-      .then(function (result) {
-        if (result.success) {
-          form.hidden = true;
-          successEl.hidden = false;
-        } else {
-          errorEl.hidden = false;
-        }
-      })
-      .catch(function () {
-        errorEl.hidden = false;
-      });
-  });
-</script>
 
 </body>
 </html>
